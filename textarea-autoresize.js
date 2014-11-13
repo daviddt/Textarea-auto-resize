@@ -4,7 +4,7 @@
  * Licensed under the MIT license
  *
  * The plugin will automatically take
- * all textarea's with the class "textarea-auto-resize will"
+ * all textarea's with the class "textarea-auto-resize"
  *
  */
 
