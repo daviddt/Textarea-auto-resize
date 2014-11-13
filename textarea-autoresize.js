@@ -38,15 +38,15 @@
 	}
 
 	function Plugin(element) {
-    	this.element = element;
-    	this.init();
+    	    this.element = element;
+    	    this.init();
  	}
 
  	Plugin.prototype =  {
  		init: function () {
  			var height  = outerHeight(this.element),
-		    	diff	= parseInt(getStyle(this.element, "padding-bottom")) +
-		                  parseInt(getStyle(this.element, "padding-top"));
+		    	    diff    = parseInt(getStyle(this.element, "padding-bottom")) +
+		                      parseInt(getStyle(this.element, "padding-top"));
 
 		    if (this.element.scrollHeight + diff <= height) {
 		       diff = 0;
