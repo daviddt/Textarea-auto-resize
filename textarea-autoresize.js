@@ -3,8 +3,8 @@
  * Based on http://javierjulio.github.io/textarea-autosize/
  * Licensed under the MIT license
  *
- * The plugin will automatically take
- * all textarea's with the class "textarea-auto-resize"
+ * The plugin will automatically take all textarea's with the class "textarea-auto-resize"
+ * So just include the script at the bottom of your page, give the textarea that you want to resize the class "textarea-auto-resize" and profit
  *
  */
 
