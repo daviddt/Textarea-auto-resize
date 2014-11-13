@@ -1,5 +1,6 @@
-/*!
+/*
  * Textarea AutoSize plugin
+ * Based on http://javierjulio.github.io/textarea-autosize/
  * Licensed under the MIT license
  *
  * The plugin will automatically take
@@ -19,7 +20,7 @@
 	    	outerHeight += parseInt(curStyle.marginTop);
 	    	outerHeight += parseInt(curStyle.marginBottom);
 
-	    return outerHeight //If you'd like to return the outerheight
+	    return outerHeight 
 	}
 
 	function getStyle(oElm, strCssRule){
@@ -37,14 +38,14 @@
 	}
 
 	function Plugin(element) {
-    	    this.element = element;
-    	    this.init();
+    	this.element = element;
+    	this.init();
  	}
 
  	Plugin.prototype =  {
  		init: function () {
- 			var height  = outerHeight(this.element);
-		    var diff	= parseInt(getStyle(this.element, "padding-bottom")) +
+ 			var height  = outerHeight(this.element),
+		    	diff	= parseInt(getStyle(this.element, "padding-bottom")) +
 		                  parseInt(getStyle(this.element, "padding-top"));
 
 		    if (this.element.scrollHeight + diff <= height) {
